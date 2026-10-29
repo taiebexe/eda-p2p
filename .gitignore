@@ -1,0 +1,6 @@
+build/
+build-*/
+*.user
+*.user.*
+.qtc_clangd/
+.DS_Store
