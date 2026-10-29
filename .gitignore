@@ -4,3 +4,14 @@ build-*/
 *.user.*
 .qtc_clangd/
 .DS_Store
+
+# IDE caches and local configuration
+.cache/
+.idea/
+.vscode/
+compile_commands.json
+
+# Runtime data and private keys
+keys/*.pem
+keys/*.key
+*.log
