@@ -1,17 +1,34 @@
+# Build-Ausgaben (CMake, Visual Studio, Qt Creator)
 build/
 build-*/
+out/
+CMakeUserPresets.json
+CMakeCache.txt
+CMakeFiles/
+compile_commands.json
+
+# Visual Studio
+.vs/
+*.vcxproj.user
+*.suo
+*.VC.db
+*.VC.opendb
+
+# Qt Creator
 *.user
 *.user.*
 .qtc_clangd/
-.DS_Store
+.qmlls.ini
 
-# IDE caches and local configuration
-.cache/
+# Andere IDEs und Caches
 .idea/
 .vscode/
-compile_commands.json
+.cache/
 
-# Runtime data and private keys
-keys/*.pem
-keys/*.key
+# Betriebssystem
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
 *.log
