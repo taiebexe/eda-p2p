@@ -16,6 +16,7 @@ ChatController::ChatController(const QString& displayName, quint16 udpPort, quin
     , m_udp(new UdpService(m_ownId, this))
     , m_tcp(new TcpService(this))
 {
+    //!
     // Alle Verbindungen zwischen Netzwerk und Oberfläche laufen über Signale.
     // Die Services wissen nicht, wer zuhört – lose Kopplung.
     connect(m_udp, &UdpService::messageReceived, this,
